@@ -27,6 +27,10 @@ public class ApiController {
 		String url = "/";
 		model.addAttribute("url", url);
 		
+		//Get remaining cards
+		int remaining = service.getRemaining();
+		model.addAttribute("remaining", remaining);
+		
 		return "index";
 	}
 	
@@ -46,6 +50,9 @@ public class ApiController {
 		String url = "/draw?count=" + count;
 		model.addAttribute("url", url);
 		
+		//Get remaining cards
+		int remaining = service.getRemaining();
+		model.addAttribute("remaining", remaining);
 		
 		//Specify jsp
 		return "/draw";

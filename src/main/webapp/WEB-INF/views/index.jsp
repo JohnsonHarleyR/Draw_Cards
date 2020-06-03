@@ -30,7 +30,7 @@
 	</section>
 	
 	<p>
-		There are   cards left.
+		There are ${remaining} cards left.
 	</p>
 	
 	<p>

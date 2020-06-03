@@ -64,7 +64,9 @@
 	
 		<a href="${url}">New Cards </a>|
 		<a href="/shuffle?url=${url}"> Reshuffle </a>|
-		<a href="/"> Back to Home </a>
+		<a href="/"> Back to Home </a><br>
+		
+		Cards Remaining: ${remaining}
 	
 	</section>
 	
